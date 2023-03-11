@@ -14,6 +14,5 @@ wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd6
 chmod +x minikube-linux-amd64
 sudo mv minikube-linux-amd64 /usr/local/bin/minikube
 sudo minikube version
-sudo usermod -aG docker $USER && newgrp docker
-echo "Exit from root and type command minikube start --driver=docker"
+echo "Exit from root and type command sudo usermod -aG docker $USER && newgrp docker and minikube start --driver=docker"
 
